@@ -47,6 +47,11 @@
     .carousel {
         width: 45rem;
     }
+
+    .descriptions_project_paragraph {
+        width: 45rem;
+        height: 18rem;
+    }
     
     .send_email {
         padding: 0rem;
@@ -95,6 +100,11 @@
 
     .list {
         margin: 3rem 5rem 0rem 5rem;
+    }
+    
+    .descriptions_project_paragraph {
+        width: 45rem;
+        height: 18rem;
     }
 
     .projects_informations_header {
