@@ -3,10 +3,94 @@
     font-size: 45%;
     }
 
-    @keyframes appear {}
-    
+    @keyframes appear {
+        from {
+            opacity: 0;
+            clip-path: inset(1% 1% 0 0);
+        }
+        to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
     .block {
-        animation-range: entry 0% cover 0%;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 25%;
+    }
+
+    .list {
+        margin: 3rem 5rem 0rem 3rem;
+    }
+
+    .projects_informations_header {
+        justify-content: flex-start;
+        gap: 5rem;
+    }
+
+    .projects_informations {
+        margin: 10rem 0rem 10rem 0rem;
+    }
+
+    .Experience_informations_header {
+        margin: 10rem 0rem 0rem 2rem;  
+    }
+
+    .img_project {
+        width: 45rem;
+    }
+    .projects_informations__projects__name_project {
+        text-align: start;
+    }
+
+    .carousel {
+        width: 45rem;
+    }
+    
+    .send_email {
+        padding: 0rem;
+    }
+
+    .footer_informations_text__social-media {
+         margin: 0rem;
+    }
+
+    input {
+        width: 30rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn_line {
+        margin-bottom: 2rem;
+    }
+
+    .footer_nav {
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 820px) and (min-width:667px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            clip-path: inset(1% 1% 0 0);
+        }
+        to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
+    .block {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 25%;
     }
 
     .list {
@@ -23,7 +107,7 @@
     }
 
     .Experience_informations_header {
-        margin: 10rem 0rem 10rem 2rem;  
+        margin: 10rem 0rem 0rem 2rem;  
     }
 
     .img_project {
@@ -53,60 +137,9 @@
     .btn_line {
         margin-bottom: 2rem;
     }
-}
 
-@media (max-width: 820px) and (min-width:667px) {
-    html {
-    font-size: 62.5%;
-    }
-
-    @keyframes appear {}
-    
-    .block {
-        animation-range: entry 0% cover 0%;
-    }
-
-    .list {
-        margin: 3rem 5rem 0rem 5rem;
-    }
-
-    .projects_informations_header {
-        justify-content: space-around;
-    }
-
-    .projects_informations {
-        margin: 10rem 0rem 10rem 0rem;
-    }
-
-    .Experience_informations_header {
-        margin: 10rem 0rem 10rem 2rem;  
-    }
-
-    .img_project {
-        width: 45rem;
-    }
-    .projects_informations__projects__name_project {
-        text-align: start;
-    }
-
-    .carousel {
-        width: 45rem;
-    }
-    
-    .send_email {
-        padding: 0rem;
-    }
-
-    .footer_informations_text__social-media {
-         margin: 0rem;
-    }
-
-    input {
-        width: 30rem;
-        margin-top: 1.5rem;
-    }
-
-    .btn_line {
-        margin-bottom: 2rem;
+    .footer_nav {
+        flex-direction: column;
+        padding-top: 4rem;
     }
 }

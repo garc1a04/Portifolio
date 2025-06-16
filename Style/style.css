@@ -26,7 +26,7 @@ header {
     position: relative;
     overflow: hidden;
     min-height: 100%;
-    padding-bottom: 8rem;
+    padding-bottom: 9rem;
 }
 
 header > * {
@@ -43,24 +43,56 @@ header > * {
     z-index: 0;
 }
 
+.fixed_list {
+    position: fixed;
+    background-color: #151515;
+    border-bottom: 2px solid #FF00FF;
+    width: 100%;
+    height: 7rem;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    animation: border 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+@keyframes border {
+    0% {
+        border-color: #151515;
+    }
+    100% {
+        border-color: #FF00FF;
+    }
+}
+
+.fixed {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
 .list {
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 10rem 0rem 10rem;
+    margin: 2rem 10rem 0rem 10rem;
 }
 
 .list_itemns {
     display: flex;
     gap: 1.5rem;
-    list-style-type: none;
+    animation: all 3s ease-in; 
+    z-index: 100;
 }
 
-.list_itemns li {
-     transition: transform 0.3s ease;
-     cursor: pointer;
+.list_itemns a {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
-.list_itemns li:hover {
+.list_itemns a:hover {
     transform: scale(1.2);
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, #ff0057, #7a00ff);
@@ -231,7 +263,7 @@ header > * {
 
 .card {
     width: 70rem;
-    background-color: transparent;
+    background-color: transparent;  
     font-size: 1.5rem;
 }
 
@@ -246,7 +278,7 @@ header > * {
 
 .img_project {
     width: 70rem;
-    border: 2px solid #242424;
+    border: 3px solid #242424;
 }
 
 .carousel {
@@ -431,5 +463,5 @@ footer {
 .block {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 35%;
+    animation-range: entry 0% cover 25%;
 }

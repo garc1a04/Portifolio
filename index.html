@@ -12,19 +12,21 @@
         <link rel="stylesheet" href="./Style/media.css">
     </head>
     <body>
-        <header>
+        <header id="home">
             <div id="demo"></div>
 
-            <nav class="list">
-                <h1 class="list_title">GUILHERME</h1>
-                
-                <ul class="list_itemns">
-                    <li class="list_itemns1">Home</li>
-                    <li class="list_itemns3">Experiences</li>
-                    <li class="list_itemns3">Projects</li>
-                    <li class="list_itemns4">Contact</li>
-                </ul>
-            </nav>
+            <div class="fixed">
+                <nav class="list">
+                    <h1 class="list_title">GUILHERME</h1>
+                    
+                    <ul class="list_itemns">
+                        <a href="#home" class="list_itemns1">Home</a>
+                        <a href="#Experiences"class="list_itemns2">Experiences</a>
+                        <a href="#Projects"class="list_itemns3">Projects</a>
+                        <a href="#Contact"class="list_itemns4">Contact</a>
+                    </ul>
+                </nav>
+            </div>
 
             <section class="header_informations">
                 <article class="header_informations_text">
@@ -53,8 +55,7 @@
         </header>
 
         <main class="informations">
-
-            <section class="Experience_informations block">
+            <section class="Experience_informations block" id="Experiences">
                 <header class="projects_informations_header Experience_informations_header">
                        <h1 class="projects_informations__title">Experiences</h1>
                </header>
@@ -67,7 +68,7 @@
                             <div class="col-md-7" id="Experience1">
                                 <h2 class="experience_title featurette-heading fw-normal lh-1">Monitor de Álgebra e Geometria<span class="text-muted experience_date"> 2024.1</span></h2>
 
-                                <p class="lead experience_description">Primeira monitoria na faculdade, estava no 3° semestre de Engenaria da Computação e fui responsável por criar aulões, ensinar e criar materias para ajudar os alunos nessa disciplina
+                               <p class="lead experience_description">Minha primeira monitoria na faculdade. No 3º semestre de Engenharia da Computação, fui responsável por ministrar aulões, tirar dúvidas e criar materiais de apoio para os alunos da disciplina de Álgebra e Geometria.
                                 </p>
 
                             </div>
@@ -83,9 +84,12 @@
                         <div class="row featurette block">
                             <div class="col-md-7 order-md-2" id="Experience1">
 
-                                <h2 class="featurette-heading fw-normal lh-1 experience_title">Monitor de Programação Orientada a Objetos<span class="text-muted"> 2024.2 - 2025.1</span></h2>
+                            <h2 class="featurette-heading fw-normal lh-1 experience_title">Monitor de Programação Orientada a Objetos<span class="text-muted"> 2024.2 - 2025.1</span></h2>
 
-                                <p class="lead experience_description">A monitoria mais importante, sempre gostei de programar e poder ensinar isso, foi uma experiência única. Nessa monitoria ensinei sobre Raciocinio Lógico em Java, Abstração, Encapsulamento, Herança, Polimorfismo e Interface Gráfica(Swing).Nessa monitoria eu consegui melhorar minha comunicação com relação a programação e minhas habilidades de programação</p>
+                            <p class="lead experience_description"> Essa foi uma das experiências mais marcantes da minha graduação. Sempre gostei de programar, e poder ensinar isso foi incrível.  
+                            Nessa monitoria, abordei temas como Raciocínio Lógico com Java, Abstração, Encapsulamento, Herança, Polimorfismo e Interface Gráfica (Swing).  
+                            Além de consolidar meus conhecimentos, desenvolvi ainda mais minha comunicação e didática.
+                            </p>
                             </div>
 
                             <div class="col-md-5 order-md-1">
@@ -99,7 +103,9 @@
                             <div class="col-md-7" id="Experience1">
                                 <h2 class="experience_title featurette-heading fw-normal lh-1">Minicurso: Programação para jogos interativos<span class="text-muted experience_date"> 2024.2</span></h2>
 
-                                <p class="lead experience_description">Nesse Minicurso, tivemos o objetivo de mostrar o Raciocinio Lógico, através da criação de jogos, utilizamos o Python, com a criação do jogo Flappy Bird</p>
+                            <p class="lead experience_description">Neste minicurso, apresentamos os fundamentos do raciocínio lógico por meio do desenvolvimento de jogos.  
+                            Utilizamos Python para criar uma versão do clássico Flappy Bird, promovendo o aprendizado de forma interativa e divertida.
+                            </p>
                             </div>
 
                             <div class="col-md-5">
@@ -111,18 +117,16 @@
             </section>
 
 
-            <section class="projects_informations block">
+            <section class="projects_informations block" id="Projects">
                 <article class="projects_informations_main">
 
                     <header class="projects_informations_header">
                         <h1 class="projects_informations__title">PROJECTS</h1>
-                        <button class="btn btn_line" style="width: 12rem;">CONTACT ME</button>
                     </header>
 
                     <div class="projects_informations__projects">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-
                                 <div class="carousel-item active">
                                     <div class="card" id="card1">
                                         <a href="https://garc1a04.github.io/SimomGame/"  class="projects_informations__projects__name_project">Simom Game</a>
@@ -130,7 +134,9 @@
                                         <img class="img_project" id="img_Simon" src="./Assets/Projects/Simo-game-project.png">
 
                                         <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">Simom Game, conhecido como Genius, é um jogo de decorar padrões das cores, foi meu primeiro projeto tendo como prática o DOM(Document Object Model) onde mexemos com sons, padrões e funções.</p>
+                                            <p class="descriptions_project_paragraph">Simon Game (ou Genius), um jogo de memorização de padrões de cores e sons.  
+                                            Foi meu primeiro projeto prático com manipulação do DOM (Document Object Model), explorando eventos, funções e interações visuais e sonoras.
+                                            </p>
 
                                             <ul class="tools">
                                                 <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
@@ -140,6 +146,7 @@
                                         </div>
 
                                     </div>
+
                                 </div>
 
                                 <div class="carousel-item">
@@ -149,7 +156,8 @@
                                         <img class="img_project" id="img_Simon" src="./Assets/Projects/indice-project.png">
 
                                          <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">Indíce Remissivo, um projeto feito na disciplina de Estrutura de Dados, o projeto pode receber um texto feito pelo usuário e colocar as palavras que querem como indíce ao lado, como também podemos enviar arquivos .txt, o projeto utiliza Árvore AVL e Tabela Hash</p>
+                                           <p class="descriptions_project_paragraph"> Projeto acadêmico da disciplina de Estrutura de Dados. O sistema permite inserir textos manualmente ou via arquivos `.txt` e cria automaticamente um índice com as palavras selecionadas. Foi desenvolvido utilizando Árvore AVL e Tabela Hash.
+                                            </p>
 
                                             <ul class="tools">
     
@@ -168,7 +176,10 @@
                                         <img class="img_project" id="img_Simon" src="./Assets/Projects/rating-project.png">
 
                                          <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">Rating Component, um projeto do Front-End Mentor, esse projeto pratiquei meus conhecimentos de HTML e CSS</p>
+                                            <p class="descriptions_project_paragraph">
+                                                Projeto realizado através da plataforma Frontend Mentor.  
+                                                Um componente simples de avaliação que me ajudou a praticar e reforçar conceitos de HTML e CSS.
+                                            </p>
 
                                             <ul class="tools">
                                                  <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
@@ -186,7 +197,10 @@
                                         <img class="img_project" id="img_Simon" src="./Assets/Projects/tin-dog-project.png">
 
                                          <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">DogTin, um site para encontro de cachorros, com esse projeto pratiquei o uso do Bootstrap.</p>
+                                            <p class="descriptions_project_paragraph">
+                                                Um site fictício de encontros para cachorros, criado para exercitar o uso do framework Bootstrap.  
+                                                Neste projeto trabalhei com responsividade, componentes prontos e layout moderno.
+                                            </p>
 
                                             <ul class="tools">
                                                  <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
@@ -208,11 +222,15 @@
                                             <img class="img_project" id="img_Simon" src="./Assets/Projects/GithubFinder.png">
 
                                             <div class="descriptions_project">
-                                                <p class="descriptions_project_paragraph">Github Finder, um projeto do Front-End Mentor, um site para buscar o perfil do github do seu programador, nesse projeto utilizei Node.js e Express.js para a utilização da API.</p>
+                                               <p class="descriptions_project_paragraph">
+                                                    Aplicação para buscar perfis no GitHub, utilizando a API pública da plataforma.  
+                                                    Desenvolvido com Node.js, Express.js e consumo de APIs, esse projeto reforçou meus conhecimentos em back-end e integração de serviços.
+                                                </p>
+
                                                 <ul class="tools">
                                                     <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
                                                     <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
-                                                    <li><img class="img_tools" id="img3" src="./Assets/icon-tools/js.png"></li>
+                                                    <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
     
                                                     <li><img class="img_tools" id="img3" src="./Assets/icon-tools/node-js.png"></li>
     
@@ -237,7 +255,7 @@
                 </article>
             </section>
 
-            <section class="contact_informations">
+            <section class="contact_informations" id="Contact">
                 <div class="contact_informations_text">
                     <h1 class="contact_informations_text__title">Contato</h1>
                     <p class="contact_informations_text__description">Fico feliz que tenha gostado do meu portfólio! Obrigado pela visita. Se quiser conversar, estou à disposição!</p>
