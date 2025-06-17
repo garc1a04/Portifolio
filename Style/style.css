@@ -449,19 +449,11 @@ footer {
     object-fit: contain;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        clip-path: inset(1% 1% 0 0);
-    }
-    to {
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
+.hidden {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.45, 0.085, 0.68, 0.53);
 }
 
-.block {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 24%;
+.show {
+     opacity: 1;
 }

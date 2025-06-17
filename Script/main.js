@@ -1,7 +1,21 @@
 let navbar = document.querySelector(".fixed");
-let sections = document.querySelectorAll("section");
+let hidden = document.querySelectorAll(".hidden");
 
-let navLinks = document.querySelectorAll("header div nav ul");
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+        
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+            return;
+        }
+
+        entry.target.classList.remove("show");
+    });
+
+});
+
+hidden.forEach((el) => observer.observe(el));
 
 let altura = window.scrollY;
 if(altura != 0) {
@@ -18,7 +32,6 @@ window.onscroll = () => {
 
     navbar.classList.add("fixed_list")
 };
-
 
 new JParticles.Particle('#demo', {
     range: 1.5,
