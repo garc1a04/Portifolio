@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,21 +20,27 @@
                     <h1 class="list_title">GUILHERME</h1>
                     
                     <ul class="list_itemns">
-                        <a href="#home" class="list_itemns1">Home</a>
-                        <a href="#Experiences"class="list_itemns2">Experiences</a>
-                        <a href="#Projects"class="list_itemns3">Projects</a>
-                        <a href="#Contact"class="list_itemns4">Contact</a>
+                        <a href="#home" class="list_itemns1" data-i18n="nav.home">Home</a>
+                        <a href="#Experiences" class="list_itemns2" data-i18n="nav.experiences">Experiences</a>
+                        <a href="#Projects" class="list_itemns3" data-i18n="nav.projects">Projects</a>
+                        <a href="#Contact" class="list_itemns4" data-i18n="nav.contact">Contact</a>
                     </ul>
+
+                    <div class="button-language">
+                        <button class="language-brazil" data-lang="pt">🇧🇷</button>
+                        <button class="language-eua" data-lang="en">🇺🇸</button>
+                    </div>
                 </nav>
             </div>
 
             <section class="header_informations">
                 <article class="header_informations_text">
-                    <h3 class="header_informations_text__title">Prazer, eu sou o <span class="line__title">Guilherme</span></h1>
+                    <h3 class="header_informations_text__title" data-i18n="header.greeting">Prazer, eu sou o 
+                        <span class="line__title" data-i18n="header.name">Guilherme</span></h3>
 
-                    <h1 class="header_informations_text__mission">Software Engineer</h1>
+                    <h1 class="header_informations_text__mission" data-i18n="header.role">Software Engineer</h1>
                     
-                    <p class="header_informations_text__description"> Nascido em São Gonçalo/RJ, sou apaixonado por programação competitiva e estou sempre buscando evoluir.  
+                    <p class="header_informations_text__description" data-i18n="header.bio"> Nascido em São Gonçalo/RJ, sou apaixonado por programação competitiva e estou sempre buscando evoluir.  
                         Gosto de explorar novos desafios e aprimorar meus conhecimentos em tecnologia.  
                         Atualmente, estou em busca de uma oportunidade para colocar minhas habilidades em prática e crescer com grandes projetos!</p>
 
@@ -51,45 +57,47 @@
                             <a href="https://www.linkedin.com/in/guilherme-garcia-669863262/"><img class="icon" src="./Assets/Linkedin.png"></a>
                         </li>
                     </ul>
+                </article>
             </section>
         </header>
 
         <main class="informations">
             <section class="Experience_informations block" id="Experiences">
                 <header class="projects_informations_header Experience_informations_header">
-                       <h1 class="projects_informations__title">Experiences</h1>
-               </header>
+                    <h1 class="projects_informations__title" data-i18n="experiences.section_title">Experiences</h1>
+                </header>
 
                 <div class="container marketing">
 
                     <div class="row block">
 
-                      <div class="row featurette block">
+                        <div class="row featurette block">
                             <div class="col-md-7" id="Experience1">
-                                <h2 class="experience_title featurette-heading fw-normal lh-1">Monitor de Álgebra e Geometria<span class="text-muted experience_date"> 2024.1</span></h2>
+                                <h2 class="experience_title featurette-heading fw-normal lh-1">
+                                    <span data-i18n="experiences.algebra.title">Monitor de Álgebra e Geometria</span>
+                                    <span class="text-muted experience_date" data-i18n="experiences.algebra.date"> 2024.1</span>
+                                </h2>
 
-                               <p class="lead experience_description">Minha primeira monitoria na faculdade. No 3º semestre de Engenharia da Computação, fui responsável por ministrar aulões, tirar dúvidas e criar materiais de apoio para os alunos da disciplina de Álgebra e Geometria.
-                                </p>
-
+                                <p class="lead experience_description" data-i18n="experiences.algebra.description">Minha primeira monitoria na faculdade. No 3º semestre de Engenharia da Computação, fui responsável por ministrar aulões, tirar dúvidas e criar materiais de apoio para os alunos da disciplina de Álgebra e Geometria.</p>
                             </div>
 
                             <div class="col-md-5">
-                               <img class="img_experience" src="Assets/Experience/Foto Monitoria de Álgebra.png">
+                                <img class="img_experience" src="Assets/Experience/Foto Monitoria de Álgebra.png">
                             </div>
                         </div>
 
                         <hr class="featurette-divider">
-                    
 
                         <div class="row featurette block">
-                            <div class="col-md-7 order-md-2" id="Experience1">
+                            <div class="col-md-7 order-md-2" id="Experience2">
+                                <h2 class="featurette-heading fw-normal lh-1 experience_title">
+                                    <span data-i18n="experiences.poo.title">Monitor de Programação Orientada a Objetos</span>
+                                    <span class="text-muted" data-i18n="experiences.poo.date"> 2024.2 - 2025.1</span>
+                                </h2>
 
-                            <h2 class="featurette-heading fw-normal lh-1 experience_title">Monitor de Programação Orientada a Objetos<span class="text-muted"> 2024.2 - 2025.1</span></h2>
-
-                            <p class="lead experience_description"> Essa foi uma das experiências mais marcantes da minha graduação. Sempre gostei de programar, e poder ensinar isso foi incrível.  
-                            Nessa monitoria, abordei temas como Raciocínio Lógico com Java, Abstração, Encapsulamento, Herança, Polimorfismo e Interface Gráfica (Swing).  
-                            Além de consolidar meus conhecimentos, desenvolvi ainda mais minha comunicação e didática.
-                            </p>
+                                <p class="lead experience_description" data-i18n="experiences.poo.description"> Essa foi uma das experiências mais marcantes da minha graduação. Sempre gostei de programar, e poder ensinar isso foi incrível.  
+                                Nessa monitoria, abordei temas como Raciocínio Lógico com Java, Abstração, Encapsulamento, Herança, Polimorfismo e Interface Gráfica (Swing).  
+                                Além de consolidar meus conhecimentos, desenvolvi ainda mais minha comunicação e didática.</p>
                             </div>
 
                             <div class="col-md-5 order-md-1">
@@ -100,28 +108,29 @@
                         <hr class="featurette-divider">
 
                         <div class="row featurette block">
-                            <div class="col-md-7" id="Experience1">
-                                <h2 class="experience_title featurette-heading fw-normal lh-1">Minicurso: Programação para jogos interativos<span class="text-muted experience_date"> 2024.2</span></h2>
+                            <div class="col-md-7" id="Experience3">
+                                <h2 class="experience_title featurette-heading fw-normal lh-1">
+                                    <span data-i18n="experiences.games.title">Minicurso: Programação para jogos interativos</span>
+                                    <span class="text-muted experience_date" data-i18n="experiences.games.date"> 2024.2</span>
+                                </h2>
 
-                            <p class="lead experience_description">Neste minicurso, apresentamos os fundamentos do raciocínio lógico por meio do desenvolvimento de jogos.  
-                            Utilizamos Python para criar uma versão do clássico Flappy Bird, promovendo o aprendizado de forma interativa e divertida.
-                            </p>
+                                <p class="lead experience_description" data-i18n="experiences.games.description">Neste minicurso, apresentamos os fundamentos do raciocínio lógico por meio do desenvolvimento de jogos.  
+                                Utilizamos Python para criar uma versão do clássico Flappy Bird, promovendo o aprendizado de forma interativa e divertida.</p>
                             </div>
 
                             <div class="col-md-5">
-                               <img class="img_experience" src="Assets/Experience/Aula de jogo.png">
+                                <img class="img_experience" src="Assets/Experience/Aula de jogo.png">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
             <section class="projects_informations block" id="Projects">
                 <article class="projects_informations_main">
 
                     <header class="projects_informations_header">
-                        <h1 class="projects_informations__title">PROJECTS</h1>
+                        <h1 class="projects_informations__title" data-i18n="projects.section_title">PROJECTS</h1>
                     </header>
 
                     <div class="projects_informations__projects">
@@ -129,14 +138,13 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="card" id="card1">
-                                        <a href="https://garc1a04.github.io/SimomGame/"  class="projects_informations__projects__name_project">Simom Game</a>
+                                        <a href="https://garc1a04.github.io/SimomGame/" class="projects_informations__projects__name_project">Simom Game</a>
 
                                         <img class="img_project" id="img_Simon" src="./Assets/Projects/Simo-game-project.png">
 
                                         <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">Simon Game (ou Genius), um jogo de memorização de padrões de cores e sons.  
-                                            Foi meu primeiro projeto prático com manipulação do DOM (Document Object Model), explorando eventos, funções e interações visuais e sonoras.
-                                            </p>
+                                            <p class="descriptions_project_paragraph" data-i18n="projects.simon.description">Simon Game (ou Genius), um jogo de memorização de padrões de cores e sons.  
+                                            Foi meu primeiro projeto prático com manipulação do DOM (Document Object Model), explorando eventos, funções e interações visuais e sonoras.</p>
 
                                             <ul class="tools">
                                                 <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
@@ -144,101 +152,91 @@
                                                 <li><img class="img_tools" id="img3" src="./Assets/icon-tools/js.png"></li>
                                             </ul>
                                         </div>
-
                                     </div>
-
                                 </div>
 
                                 <div class="carousel-item">
-                                    <div class="card" id="card1">
-                                        <a href="https://github.com/garc1a04/IndiceRemissivo"  class="projects_informations__projects__name_project">Subject index</a>
+                                    <div class="card" id="card2">
+                                        <a href="https://github.com/garc1a04/IndiceRemissivo" class="projects_informations__projects__name_project" data-i18n="projects.index.name">Subject index</a>
 
-                                        <img class="img_project" id="img_Simon" src="./Assets/Projects/indice-project.png">
+                                        <img class="img_project" id="img_Index" src="./Assets/Projects/indice-project.png">
 
-                                         <div class="descriptions_project">
-                                           <p class="descriptions_project_paragraph"> Projeto acadêmico da disciplina de Estrutura de Dados. O sistema permite inserir textos manualmente ou via arquivos `.txt` e cria automaticamente um índice com as palavras selecionadas. Foi desenvolvido utilizando Árvore AVL e Tabela Hash.
-                                            </p>
+                                        <div class="descriptions_project">
+                                            <p class="descriptions_project_paragraph" data-i18n="projects.index.description"> Projeto acadêmico da disciplina de Estrutura de Dados. O sistema permite inserir textos manualmente ou via arquivos `.txt` e cria automaticamente um índice com as palavras selecionadas. Foi desenvolvido utilizando Árvore AVL e Tabela Hash.</p>
 
                                             <ul class="tools">
-    
                                                 <li><img class="img_tools" id="img1" src="./Assets/icon-tools/java.png"></li>
                                                 <li><img class="img_tools" id="img2" src="./Assets/icon-tools/DSA.png"></li>
                                             </ul>
                                         </div>
-                                        
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
-                                    <div class="card" id="card1">
-                                        <a href="https://garc1a04.github.io/rating-component/"  class="projects_informations__projects__name_project">Rating Component</a>
+                                    <div class="card" id="card3">
+                                        <a href="https://garc1a04.github.io/rating-component/" class="projects_informations__projects__name_project">Rating Component</a>
                                         
-                                        <img class="img_project" id="img_Simon" src="./Assets/Projects/rating-project.png">
+                                        <img class="img_project" id="img_Rating" src="./Assets/Projects/rating-project.png">
 
-                                         <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">
+                                        <div class="descriptions_project">
+                                            <p class="descriptions_project_paragraph" data-i18n="projects.rating.description">
                                                 Projeto realizado através da plataforma Frontend Mentor.  
                                                 Um componente simples de avaliação que me ajudou a praticar e reforçar conceitos de HTML e CSS.
                                             </p>
 
                                             <ul class="tools">
-                                                 <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
-                                                 <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
-                                                 <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
-                                             </ul>
+                                                <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
+                                                <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
+                                                <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="carousel-item">
-                                    <div class="card" id="card1">
-                                        <a href="https://garc1a04.github.io/DogTin/"  class="projects_informations__projects__name_project"> DogTin</a>
+                                    <div class="card" id="card4">
+                                        <a href="https://garc1a04.github.io/DogTin/" class="projects_informations__projects__name_project">DogTin</a>
                                         
-                                        <img class="img_project" id="img_Simon" src="./Assets/Projects/tin-dog-project.png">
+                                        <img class="img_project" id="img_DogTin" src="./Assets/Projects/tin-dog-project.png">
 
-                                         <div class="descriptions_project">
-                                            <p class="descriptions_project_paragraph">
+                                        <div class="descriptions_project">
+                                            <p class="descriptions_project_paragraph" data-i18n="projects.dogtin.description">
                                                 Um site fictício de encontros para cachorros, criado para exercitar o uso do framework Bootstrap.  
                                                 Neste projeto trabalhei com responsividade, componentes prontos e layout moderno.
                                             </p>
 
                                             <ul class="tools">
-                                                 <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
-                                                 <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
-                                                 
-                                                 <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
-     
-                                                 <li><img class="img_tools" id="img3" src="./Assets/icon-tools/bootstrap.png"></li>
-                                             </ul>
+                                                <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
+                                                <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
+                                                <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
+                                                <li><img class="img_tools" id="img4" src="./Assets/icon-tools/bootstrap.png"></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
 
-                                    <div class="carousel-item">
-                                        <div class="card" id="card1">
+                                <div class="carousel-item">
+                                    <div class="card" id="card5">
+                                        <a href="https://github-user-search-6ru8.onrender.com" class="projects_informations__projects__name_project">Github Finder</a>
 
-                                            <a href="https://github-user-search-6ru8.onrender.com"  class="projects_informations__projects__name_project"> Github Finder</a>
+                                        <img class="img_project" id="img_Github" src="./Assets/Projects/GithubFinder.png">
 
-                                            <img class="img_project" id="img_Simon" src="./Assets/Projects/GithubFinder.png">
+                                        <div class="descriptions_project">
+                                            <p class="descriptions_project_paragraph" data-i18n="projects.github.description">
+                                                Aplicação para buscar perfis no GitHub, utilizando a API pública da plataforma.  
+                                                Desenvolvido com Node.js, Express.js e consumo de APIs, esse projeto reforçou meus conhecimentos em back-end e integração de serviços.
+                                            </p>
 
-                                            <div class="descriptions_project">
-                                               <p class="descriptions_project_paragraph">
-                                                    Aplicação para buscar perfis no GitHub, utilizando a API pública da plataforma.  
-                                                    Desenvolvido com Node.js, Express.js e consumo de APIs, esse projeto reforçou meus conhecimentos em back-end e integração de serviços.
-                                                </p>
-
-                                                <ul class="tools">
-                                                    <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
-                                                    <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
-                                                    <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
-    
-                                                    <li><img class="img_tools" id="img3" src="./Assets/icon-tools/node-js.png"></li>
-    
-                                                     <li><img class="img_tools" id="img3" src="./Assets/icon-tools/express.png"></li>
-                                                </ul>
-                                            </div>
+                                            <ul class="tools">
+                                                <li><img class="img_tools" id="img1" src="./Assets/icon-tools/html (1).png"></li>
+                                                <li><img class="img_tools" id="img2" src="./Assets/icon-tools/css-3 (1).png"></li>
+                                                <li><img class="img_tools" id="img3" src="./Assets/icon-tools/jquery-original-wordmark-icon-242x256-3h2jnsl7.png"></li>
+                                                <li><img class="img_tools" id="img4" src="./Assets/icon-tools/node-js.png"></li>
+                                                <li><img class="img_tools" id="img5" src="./Assets/icon-tools/express.png"></li>
+                                            </ul>
                                         </div>
-                                     </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <button class="carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -257,19 +255,18 @@
 
             <section class="contact_informations" id="Contact">
                 <div class="contact_informations_text">
-                    <h1 class="contact_informations_text__title">Contato</h1>
-                    <p class="contact_informations_text__description">Fico feliz que tenha gostado do meu portfólio! Obrigado pela visita. Se quiser conversar, estou à disposição!</p>
+                    <h1 class="contact_informations_text__title" data-i18n="contact.title">Contato</h1>
+                    <p class="contact_informations_text__description" data-i18n="contact.description">Fico feliz que tenha gostado do meu portfólio! Obrigado pela visita. Se quiser conversar, estou à disposição!</p>
                 </div>
 
                 <article class="contact_informations__send">
                     <form action="https://formsubmit.co/guigarciamonteiro@gmail.com" method="POST" class="send_email">
-                        <input type="name" name="name" id="name" placeholder="NOME" required>
-                        <input type="email" name="email" id="email" placeholder="EMAIL"required>
-                        <textarea placeholder="MENSAGEM" name="message" required></textarea>
-                        <button type="submit" class="btn btn_line">Enviar mensagem</button>
+                        <input type="name" name="name" id="name" placeholder="NOME" data-i18n="contact.form.name" required>
+                        <input type="email" name="email" id="email" placeholder="EMAIL" data-i18n="contact.form.email" required>
+                        <textarea placeholder="MENSAGEM" name="message" data-i18n="contact.form.message" required></textarea>
+                        <button type="submit" class="btn btn_line" data-i18n="contact.form.send">Enviar mensagem</button>
                     </form>
                 </article>
-
             </section>
         </main>
 
@@ -277,7 +274,7 @@
             <nav class="footer_nav">
                 <h1 class="footer_title">GUILHERME</h1>
 
-                <p>© 2025 Guilherme Garcia. All rights reserved.</p>
+                <p id="final"></p>
 
                 <ul class="footer_informations_text__social-media">
                     <li class="footer_informations_text__social-media1">
@@ -296,6 +293,8 @@
         <script src="https://unpkg.com/jparticles/browser/jparticles.base.js"></script>
         <script src="https://unpkg.com/jparticles/browser/particle.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="./Script/texts.js"></script>
+        <script src="./Script/translation.js?v=2 async defer"></script>
         <script src="./Script/main.js?v=2" async defer></script>
     </body>
 </html>

@@ -1,6 +1,5 @@
 let navbar = document.querySelector(".fixed");
 let sections = document.querySelectorAll("section");
-
 let navLinks = document.querySelectorAll("header div nav ul");
 
 let altura = window.scrollY;
@@ -20,6 +19,7 @@ window.onscroll = () => {
 };
 
 
+
 new JParticles.Particle('#demo', {
     range: 1.5,
     num: 0.25,
@@ -29,3 +29,7 @@ new JParticles.Particle('#demo', {
     maxR: 1.5,
     color: ['#FFFFFF', '#7A00FF','#FF0057','#FF00FF']
 });
+
+
+let paragraph = document.getElementById("final")
+paragraph.textContent = `© ${new Date().getFullYear()} Guilherme Garcia. All rights reserved.`
