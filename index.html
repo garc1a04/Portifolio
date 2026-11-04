@@ -79,24 +79,53 @@
 
             <div class="container marketing">
                 <div class="row block">
+
+                    <div class="row featurette block">
+                        <div class="col-md-7 order-md-2" id="Experience2">
+                            <h2 class="featurette-heading fw-normal lh-1 experience_title">
+                                <span data-i18n="experiences.vortex.title">Estágio em Desenvolvimento Full-Stack e
+                                    IA</span>
+                                <span class="text-muted" data-i18n="experiences.vortex.date">2025.2 - Atualmente</span>
+                            </h2>
+
+                            <p class="lead experience_description" data-i18n="experiences.vortex.description">Atuo no
+                                desenvolvimento Full-Stack e IA de plataformas para saúde, educação e gestão,
+                                construindo back-ends escaláveis com NestJS e Python. Desenvolvo desde sistemas de
+                                monitoramento clínico em tempo real via WebSockets e pipelines de IA (RAG) para
+                                diagnóstico corporativo, até integrações IoT e plataformas gamificadas, aplicando
+                                rigorosamente Arquitetura Hexagonal, DDD e automação de testes para garantir a
+                                segurança, performance e manutenibilidade dos projetos.
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 order-md-1">
+                            <img class="img_experience" src="Assets/Experience/vortex.png">
+                        </div>
+                    </div>
+
+
+                    <hr class="featurette-divider">
+
                     <div class="row featurette block">
                         <div class="col-md-7" id="Experience1">
                             <h2 class="experience_title featurette-heading fw-normal lh-1">
-                                <span data-i18n="experiences.algebra.title">Monitor de Álgebra e Geometria</span>
-                                <span class="text-muted experience_date"
-                                    data-i18n="experiences.algebra.date">2024.1</span>
+                                <span data-i18n="experiences.petsaude.title">Bolsista PET-Saúde</span>
+                                <span class="text-muted experience_date" data-i18n="experiences.petsaude.date">2025.2 -
+                                    Atualmente</span>
                             </h2>
 
-                            <p class="lead experience_description" data-i18n="experiences.algebra.description">Minha
-                                primeira monitoria na faculdade. No 3º semestre de Engenharia da Computação, fui
-                                responsável por ministrar aulões, tirar dúvidas e criar materiais de apoio para os
-                                alunos da disciplina de Álgebra e Geometria.</p>
+                            <p class="lead experience_description" data-i18n="experiences.petsaude.description">Colaboro
+                                em pesquisa sobre cultura de saúde digital e educação permanente em saúde, desenvolvendo
+                                jogos educativos: um sobre conscientização na avaliação do câncer de mama para a ESPFOR
+                                e outro de memorização de rotinas diárias para crianças com TEA.
+                            </p>
                         </div>
 
                         <div class="col-md-5">
-                            <img class="img_experience" src="Assets/Experience/Foto Monitoria de Álgebra.png">
+                            <img class="img_experience" src="Assets/Experience/petsaude.png">
                         </div>
                     </div>
+
 
                     <hr class="featurette-divider">
 
@@ -119,6 +148,35 @@
 
                         <div class="col-md-5 order-md-1">
                             <img class="img_experience" src="Assets/Experience/Monitoria POO.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="experience-more-button" type="button" aria-expanded="false"
+                    aria-controls="moreExperiences" data-experiences-toggle>
+                    <span data-i18n="experiences.show_more">Ver mais experiências</span>
+                    <span data-i18n="experiences.show_less" hidden>Ver menos experiências</span>
+                    <span class="experience-more-button__icon" aria-hidden="true">⌄</span>
+                </button>
+
+                <div id="moreExperiences" class="experience-more-content" hidden>
+                    <div class="row featurette block">
+                        <div class="col-md-7" id="Experience1">
+                            <h2 class="experience_title featurette-heading fw-normal lh-1">
+                                <span data-i18n="experiences.algebra.title">Monitor de Álgebra e Geometria</span>
+                                <span class="text-muted experience_date"
+                                    data-i18n="experiences.algebra.date">2024.1</span>
+                            </h2>
+
+                            <p class="lead experience_description" data-i18n="experiences.algebra.description">Minha
+                                primeira monitoria na faculdade. No 3º semestre de Engenharia da Computação, fui
+                                responsável por ministrar aulões, tirar dúvidas e criar materiais de apoio para os
+                                alunos da disciplina de Álgebra e Geometria.</p>
+                        </div>
+
+                        <div class="col-md-5">
+                            <img class="img_experience" src="Assets/Experience/Foto Monitoria de Álgebra.png">
                         </div>
                     </div>
 
@@ -145,6 +203,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -203,8 +262,6 @@
                                 <span class="project-card__title" data-i18n="projects.github.name">GitHub Finder</span>
                                 <span class="project-card__description" data-i18n="projects.github.description"></span>
                             </a>
-
-
                         </div>
                     </div>
 
@@ -272,6 +329,7 @@
     <script src="./Script/translation.js?v=3"></script>
     <script src="./Script/main.js?v=3"></script>
     <script src="./Script/project-carousel.js?v=1"></script>
+    <script src="./Script/experiences-toggle.js" defer></script>
 </body>
 
 </html>
