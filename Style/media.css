@@ -1,6 +1,6 @@
 @media (max-width: 667px) {
     html {
-    font-size: 45%;
+        font-size: 45%;
     }
 
     @keyframes appear {
@@ -8,6 +8,7 @@
             opacity: 0;
             clip-path: inset(1% 1% 0 0);
         }
+
         to {
             opacity: 1;
             clip-path: inset(0 0 0 0);
@@ -34,12 +35,13 @@
     }
 
     .Experience_informations_header {
-        margin: 10rem 0rem 0rem 2rem;  
+        margin: 10rem 0rem 0rem 2rem;
     }
 
     .img_project {
         width: 45rem;
     }
+
     .projects_informations__projects__name_project {
         text-align: start;
     }
@@ -47,13 +49,13 @@
     .carousel {
         width: 45rem;
     }
-    
+
     .send_email {
         padding: 0rem;
     }
 
     .footer_informations_text__social-media {
-         margin: 0rem;
+        margin: 0rem;
     }
 
     input {
@@ -81,6 +83,7 @@
             opacity: 0;
             clip-path: inset(1% 1% 0 0);
         }
+
         to {
             opacity: 1;
             clip-path: inset(0 0 0 0);
@@ -107,12 +110,13 @@
     }
 
     .Experience_informations_header {
-        margin: 10rem 0rem 0rem 2rem;  
+        margin: 10rem 0rem 0rem 2rem;
     }
 
     .img_project {
         width: 45rem;
     }
+
     .projects_informations__projects__name_project {
         text-align: start;
     }
@@ -120,13 +124,13 @@
     .carousel {
         width: 45rem;
     }
-    
+
     .send_email {
         padding: 0rem;
     }
 
     .footer_informations_text__social-media {
-         margin: 0rem;
+        margin: 0rem;
     }
 
     input {
@@ -141,5 +145,143 @@
     .footer_nav {
         flex-direction: column;
         padding-top: 4rem;
+    }
+}
+
+@media (max-width: 667px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #home {
+        width: 100%;
+        min-height: 100svh;
+        height: auto;
+        padding-top: 96px;
+        box-sizing: border-box;
+    }
+
+    #home .fixed {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 1000;
+        width: 100%;
+        margin: 0;
+    }
+
+    #home .list {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+            "brand language"
+            "links links";
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin: 0;
+        padding: 12px 16px;
+        box-sizing: border-box;
+        background: rgba(18, 18, 18, 0.94);
+        backdrop-filter: blur(12px);
+    }
+
+    #home .list_title {
+        grid-area: brand;
+        margin: 0;
+        font-size: clamp(18px, 5vw, 24px);
+        white-space: nowrap;
+    }
+
+    #home .list_itemns {
+        grid-area: links;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        width: 100%;
+        margin: 0;
+        padding: 4px 0 0;
+        list-style: none;
+    }
+
+    #home .list_itemns a {
+        font-size: 14px;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
+    #home .button-language {
+        grid-area: language;
+        justify-self: end;
+        display: flex;
+        gap: 6px;
+        margin: 0;
+    }
+
+    #home .button-language button {
+        min-width: 36px;
+        min-height: 36px;
+        padding: 4px;
+    }
+
+    #home .header_informations {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: calc(100svh - 96px);
+        padding: 28px 20px 48px;
+        box-sizing: border-box;
+    }
+
+    #home .header_informations_text {
+        width: min(100%, 680px);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #home .header_informations_text__title {
+        font-size: clamp(22px, 6vw, 34px);
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    #home .header_informations_text__mission {
+        font-size: clamp(36px, 10vw, 58px);
+        line-height: 1.08;
+        overflow-wrap: anywhere;
+    }
+
+    #home .header_informations_text__description {
+        font-size: clamp(14px, 3.8vw, 17px);
+        line-height: 1.55;
+    }
+
+    #home .header_informations_text__social-media {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    #home .list {
+        padding-inline: 10px;
+    }
+
+    #home .list_itemns {
+        column-gap: 12px;
+    }
+
+    #home .list_itemns a {
+        font-size: 13px;
+    }
+
+    #home .header_informations {
+        padding-inline: 14px;
     }
 }
