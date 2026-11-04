@@ -10,10 +10,22 @@ const translations = {
       greeting: "Prazer, eu sou o",
       name: "Guilherme",
       role: "Software Engineer",
-      bio: "Nascido em São Gonçalo/RJ, sou apaixonado por programação competitiva e estou sempre buscando evoluir. Gosto de explorar novos desafios e aprimorar meus conhecimentos em tecnologia. Atualmente, estou em busca de uma oportunidade para colocar minhas habilidades em prática e crescer com grandes projetos!"
+      bio: "Nascido em São Gonçalo/RJ, sou apaixonado por programação competitiva e por entender como a tecnologia funciona de verdade. Hoje, curso Engenharia da Computação e aplico isso na prática como Desenvolvedor Full-Stack e de IA no laboratório Vortex, além de criar projetos unindo tecnologia e saúde na pesquisa. Sigo sempre buscando evoluir, focado em entregar código limpo e soluções de impacto!"
     },
     experiences: {
       section_title: "Experiências",
+      show_more: "Ver mais experiências",
+      show_less: "Ver menos experiências",
+      vortex: {
+        title: "Estágio em Desenvolvimento Full-Stack e IA",
+        date: "2025.2 - Atualmente",
+        description: "Atuo no desenvolvimento Full-Stack e IA de plataformas para saúde, educação e gestão, construindo back-ends escaláveis com NestJS e Python. Desenvolvo desde sistemas de monitoramento clínico em tempo real via WebSockets e pipelines de IA (RAG) para diagnóstico corporativo, até integrações IoT e plataformas gamificadas, aplicando rigorosamente Arquitetura Hexagonal, DDD e automação de testes para garantir a segurança, performance e manutenibilidade dos projetos."
+      },
+      petsaude: {
+        title: "Bolsista PET-Saúde",
+        date: "2025.2 - Atualmente",
+        description: "Colaboro em pesquisa sobre cultura de saúde digital e educação permanente em saúde, desenvolvendo jogos educativos: um sobre conscientização na avaliação do câncer de mama para a ESPFOR e outro de memorização de rotinas diárias para crianças com TEA."
+      },
       algebra: {
         title: "Monitor de Álgebra e Geometria",
         date: "2024.1",
@@ -37,7 +49,7 @@ const translations = {
         description: "Simon Game (ou Genius), um jogo de memorização de padrões de cores e sons. Foi meu primeiro projeto prático com manipulação do DOM (Document Object Model), explorando eventos, funções e interações visuais e sonoras."
       },
       index: {
-        name: "Indice remissivo",
+        name: "Índice remissivo",
         description: "Projeto acadêmico da disciplina de Estrutura de Dados. O sistema permite inserir textos manualmente ou via arquivos .txt e cria automaticamente um índice com as palavras selecionadas. Foi desenvolvido utilizando Árvore AVL e Tabela Hash."
       },
       rating: {
@@ -72,7 +84,7 @@ const translations = {
   en: {
     nav: {
       home: "Home",
-      experiences: "Experiences",
+      experiences: "Experience",
       projects: "Projects",
       contact: "Contact"
     },
@@ -80,10 +92,22 @@ const translations = {
       greeting: "Nice to meet you, I'm",
       name: "Guilherme",
       role: "Software Engineer",
-      bio: "Born in São Gonçalo/RJ, I am passionate about competitive programming and always striving to evolve. I enjoy exploring new challenges and improving my knowledge of technology. I am currently looking for an opportunity to apply my skills and grow through great projects!"
+      bio: "Born in São Gonçalo/RJ, I am passionate about competitive programming and understanding how technology truly works. Today, I study Computer Engineering and apply this hands-on as a Full-Stack and AI Developer at the Vortex lab, while also creating health tech in research projects. I'm always looking to evolve, focused on delivering clean code and impactful solutions!"
     },
     experiences: {
-      section_title: "Experiences",
+      section_title: "Experience",
+      show_more: "Show more experience",
+      show_less: "Show less experience",
+      vortex: {
+        title: "Full-Stack and AI Development Internship",
+        date: "2025.2 - Present",
+        description: "I work on the Full-Stack and AI development of platforms for healthcare, education, and management, building scalable back ends with NestJS and Python. My work ranges from real-time clinical monitoring systems using WebSockets and AI (RAG) pipelines for corporate diagnostics to IoT integrations and gamified platforms. I apply Hexagonal Architecture, DDD, and test automation to ensure project security, performance, and maintainability."
+      },
+      petsaude: {
+        title: "PET-Saúde Scholarship Student",
+        date: "2025.2 - Present",
+        description: "I contribute to research on digital health culture and continuing health education by developing educational games: one focused on breast cancer screening awareness for ESPFOR, and another that helps children with ASD memorize daily routines."
+      },
       algebra: {
         title: "Algebra and Geometry Teaching Assistant",
         date: "2024.1",
